@@ -1,11 +1,12 @@
 def main():
     n = int(input())
-    a = []
+    count = 0
     for i in range(n):
-        i = input().split()
-        a.append(i)
+        p, q = [int(x) for x in input().split()]
+        if (q - p) >= 2:
+            count = count + 1
 
-    for i in a:
+    print(count)
 
 
 if __name__ == '__main__':
