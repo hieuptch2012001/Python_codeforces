@@ -1,9 +1,11 @@
 def bin_decimal(a):
     decimal = 0
     for digit in a:
-        decimal= decimal*2 + int(digit)
+        decimal = decimal*2 + int(digit)
 
     return decimal
+
+
 def main():
     a = input()
     b = input()
@@ -12,5 +14,6 @@ def main():
     c = a1 + b1
     print(bin(c)[2:])
 
+
 if __name__ == "__main__":
-    main()  
+    main()
